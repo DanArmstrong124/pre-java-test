@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>Dom's Face</title>
+    
+    
+    
+    <script>
+    
+    function update()   {
+        document.getElementById('text').value = domcount;
+        document.title = domcount + " Spins";
+        document.getElementById('title').value = domcount;
+
+    }
+        
+        var domcount = 0;
+        var dps = 1;
+        
+    function timer()    {
+        domcount = domcount + dps;
+        update();
+    }
+    setInterval(timer, 500);
+        
+    </script>
+    
+    
+    
+</head>
+
+
+<body>
+    <h1>Dom's Spinning Head!</h1>
+    <div>
+    <input type="text" id="text" disabled>
+    <img src="domsface.png" alt="Dom's Face"><br><br>
+    </div>
+</body>
+</html>

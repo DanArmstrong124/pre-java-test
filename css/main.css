@@ -1,0 +1,57 @@
+body {
+    background-color: slategrey;
+}
+
+div     {
+    text-align: center;
+    transform: translateY(100px);
+}
+
+h1     {
+    text-align: center;
+    color: black;
+}
+
+h1:hover {
+    color: pink;
+}
+
+img     {
+    transition: transform 1s ease-in;
+    animation-name: spin;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+img:hover     {
+    transform: scale(2);
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#text     {
+    background-color: slategrey;
+    color: white;
+    position: relative;
+    font-size: x-large;
+    font-family: fantasy, serif;
+    border-color: transparent;
+}
+
+button     {
+    position: static;
+    text-decoration: none;
+}
+
+button a     {
+    text-decoration: inherit;
+}
